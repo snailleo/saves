@@ -1,0 +1,64 @@
+邮箱 liuyang1  /    yvble@539
+
+mail: ex.adsage.com 
+
+https://gitlab.adsage.com/abc/mobisage-dsp
+
+git:  http://www.bootcss.com/p/git-guide/
+
+git http://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E5%8F%96%E5%BE%97%E9%A1%B9%E7%9B%AE%E7%9A%84-Git-%E4%BB%93%E5%BA%93
+
+tortoiesGit: http://www.weste.net/2013/1-31/88703.html
+
+外网 http://dsp.adsage.com/
+帐号：ontest@adsage.com
+密码：123123
+
+内网测试环境地址：http://dsp-qa.adsage.tk/
+帐号：du004@adsage.com；
+密码：123123
+
+本地测试地址：http://dsp.cc/#/
+123456
+
+liwenping001@adsage.com
+274715432
+
+angular: http://ngnice.com/
+worktile: https://worktile.com/dashboard
+          https://worktile.com/project/02df8e90911c41e68ebf0f2428961f6b/task
+
+git clone --recursive git://github.com/isaacs/npm.git 
+cd npm 
+node cli.js install npm -gf 
+
+
+<<<<<<< HEAD
+restrict: String,
+priority: Number,
+terminal: Boolean,
+template: String or Template Function:
+function(tElement, tAttrs) (...},
+templateUrl: String,
+replace: Boolean or String,
+scope: Boolean or Object,
+transclude: Boolean,
+controller: String or
+function(scope, element, attrs, transclude, otherInjectables) { ... },
+controllerAs: String,
+require: String,
+link: function(scope, iElement, iAttrs) { ... },
+compile: // 返回一个对象或连接函数，如下所示：
+function(tElement, tAttrs, transclude) {
+	return {
+		pre: function(scope, iElement, iAttrs, controller) { ... },
+		post: function(scope, iElement, iAttrs, controller) { ... }
+	}
+	// 或者
+	return function postLink(...) { ... }
+=======
+1.directive
+    restrict: 指定声明格式：E(元素) A(属性) C(类) M(注释)
+
+ 
+>>>>>>> origin/master

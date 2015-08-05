@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="styles/self.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="list">
+			<section class="s1">
+				page1
+			</section>
+			<section class="s2">
+				page2
+			</section>
+			<section class="s3">
+				page3
+			</section>
+		</div>
+	</div>
+</body>
+<script src="scripts/jquery-2.1.1.min.js"></script>
+<script>
+;(function(){
+	function sw(){
+		this.pageWidth = $(window).width() - 0;
+		this.pageHeight = $(".wrap").height() - 0;
+		this.page = $(".list section");
+		this.pages = null;
+		this.startX = 0;
+		this.startY = 0;
+		this.margin = 0;
+		this.curPage = 0;
+		this.targetElement = null;
+		this.scrollPrevent = false;
+		this.movePrevent = false;
+		this.touchDown = false;
+	}
+	sw.prototype.init = function(){
+		this.page.css({
+		"width" : this.pageWidth + "px",
+		"height" : this.pageHeight + "px"
+		});
+		this.pages = $(".list section");
+		this.bindDom();
+	}
+
+	sw.prototype.start = function(e){
+		if (this.movePrevent == true) {console.log("2s")
+			event.preventDefault();
+			return false;
+		}
+
+		this.touchDown = true;
+	
+		// 起始点，页面位置
+		this.startX = e.pageX;
+		this.startY = e.pageY;
+
+		$(".list").addClass("drag");
+
+		this.margin = $(".list").css("-webkit-transform");console.log('ok-----'+this.margin)
+		this.margin = this.margin.replace("matrix(", "");
+		this.margin = this.margin.replace(")", "");
+		this.margin = this.margin.split(",");
+		this.margin = parseInt(this.margin[5]);
+		
+	}
+	sw.prototype.movey = function(e){console.log(this.touchDown)
+		if (this.movePrevent == true || this.touchDown != true) {
+			event.preventDefault();
+			return false;
+		}
+		event.preventDefault();
+		if (this.scrollPrevent == false && e.pageY != this.startY) {
+			var temp = this.margin + e.pageY - this.startY;
+			$(".list").css("-webkit-transform", "matrix(1, 0, 0, 1, 0, " + temp + ")");
+			console.log(this.margin)
+		}
+	}
+	sw.prototype.pre = function(){
+		var newPage = this.curPage - 1;
+		this.animatePage(newPage);
+	}
+	sw.prototype.next = function(){
+		var newPage = this.curPage + 1;
+		this.animatePage(newPage);
+	}
+	sw.prototype.animatePage = function(newPage){
+		if (newPage < 0) {
+			newPage = 0;
+		}
+		if (newPage > $(".list section").length - 1) {
+			newPage = $(".list section").length - 1;
+		}
+		var t = this;
+		this.curPage = newPage;
+		var newMarginTop = newPage * (-this.pageHeight);
+		$(".list").css({
+			"-webkit-transform" : "matrix(1, 0, 0, 1, 0, " + newMarginTop + ")"
+		});
+
+		this.movePrevent = true;
+		setTimeout(function(){
+			t.movePrevent = false;
+		},300);
+
+		// 每页动画
+		if (!$(this.pages[this.curPage]).hasClass("page-show")) {
+			$(this.pages[this.curPage]).addClass("page-show");
+		}
+		$(this.pages[this.curPage - 1]).removeClass("page-show");
+		$(this.pages[this.curPage + 1]).removeClass("page-show");
+	}
+	sw.prototype.end = function(e){
+		var t = this;
+		if (t.movePrevent == true) {
+			event.preventDefault();
+			return false;
+		}
+
+		t.touchDown = false;
+
+		if (t.scrollPrevent == false) {
+			// 抬起点，页面位置
+			t.endX = e.pageX;
+			t.endY = e.pageY;
+			if (Math.abs(t.endY - t.startY) <= 50) {
+				t.animatePage(t.curPage);
+			} else {
+				if (t.endY > t.startY) {
+					t.pre();
+				} else {
+					t.next();
+				}
+			}
+		}
+
+		$(".list").removeClass("drag");
+	}
+
+	sw.prototype.bindDom = function(){
+		var t = this;
+
+		document.body.addEventListener("touchstart",function(e){
+			t.start(e.changedTouches[0])
+		});
+		document.body.addEventListener("touchmove",function(e){
+			if (e.target.id === 'ctrlV') {
+				return false;
+			} else {
+				t.movey(e.changedTouches[0]);
+			}
+		});
+		document.body.addEventListener("touchend",function(e){
+			t.end(e.changedTouches[0])
+		});
+	}
+
+	var obj = new sw();
+	obj.init();
+
+})()
+
+</script>
+</html>

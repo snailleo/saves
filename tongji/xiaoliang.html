@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head _wxlaelhepjgkhpnfpeodbobgikmbjecnne_="shake_1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>销量统计</title>
+<link type="text/css" href="css/base.css" rel="stylesheet" />
+<link type="text/css" href="css/active.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/datepicker.css" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="Top">
+	<div class="TopMain">
+		<div class="topLogo1"></div>
+		<div class="topMDleft">
+			<a>
+			<font><i></i>小花<span>(100000)</span></font>
+			</a>
+			<a style="color:#b1b1b1;margin-left: 20px;">退出</a>
+		</div>
+	</div>
+</div>
+<div class="hr_25"></div>
+<div class="orderMain">
+	<!--左侧列表-->
+	<div class="ltMainNav lt">
+		<dl>
+			<dt class="leftIco1">平台管理</dt>
+			<dd>产品分类设置</dd>
+			<dd>推荐位设置</dd>
+			<dd>短信系统设置</dd>
+		</dl>
+		<dl>
+			<dt class="leftIco2">资源管理</dt>
+			<dd>产品管理</dd>
+            <dd>企业管理</dd>
+		</dl>
+		<dl>
+			<dt class="leftIco3">订单管理</dt>
+			<dd>订单列表</dd>
+			<dd class="selected">收款账号设置</dd>
+	ou	</dl>
+	</div>
+    <!--宿回伸开ltNav_pop-->
+    <div class="ltMain_pop" style="display: block;"></div>
+
+<!--右侧内容-->
+<div class="rtMainCon">
+    <div class="rtMain_Frame">
+    <!--通用头部-->
+        <div class="pubTit" >
+            <ul>
+                <li class="lt">
+                	<h2 class="nav_page">销量统计</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="youtong">
+            <p class="tishi"><i></i>温馨提示：销售额统计根据昨日数据而计算！</p>
+            <dl class="top_tongj">
+                <dt>昨日关键数据统计</dt>
+                <dd class="top_dd clearb">
+                    <ul>
+                        <li class="td_chp">产品（元）</li>
+                        <li class="td_num">99923420</li>
+                        <li class="td_jian">999件</li>
+                        <li>日<i class="up"></i><span>128%</span></li>
+                        <li>周<i class="down"></i><span>78%</span></li>
+                        <li>月<i class="up"></i><span>200%</span></li>
+                    </ul>
+                    <ul>
+                        <li class="td_chp">团购（元）</li>
+                        <li class="td_num">99923420</li>
+                        <li class="td_jian">999件</li>
+                        <li>日<i class="up"></i><span>128%</span></li>
+                        <li>周<i class="down"></i><span>78%</span></li>
+                        <li>月<i class="up"></i><span>200%</span></li>
+                    </ul>
+                    <ul>
+                        <li class="td_chp">代金券（元）</li>
+                        <li class="td_num">99923420</li>
+                        <li class="td_jian">999件</li>
+                        <li>日<i class="up"></i><span>128%</span></li>
+                        <li>周<i class="down"></i><span>78%</span></li>
+                        <li>月<i class="up"></i><span>200%</span></li>
+                    </ul>
+                    <ul class="no_bar">
+                        <li class="td_chp">活动（元）</li>
+                        <li class="td_num">99923420</li>
+                        <li class="td_jian">999件</li>
+                        <li>日<i class="up"></i><span>128%</span></li>
+                        <li>周<i class="down"></i><span>78%</span></li>
+                        <li>月<i class="up"></i><span>200%</span></li>
+                    </ul>
+                </dd>
+            </dl>
+            <div class="xiao_tu" id="xiao_tu">
+                <div class="tq_tit">
+                    <span class="cur"><i class="xl"></i>销量趋势图</span>
+                    <span><i class="wd"></i>销量维度图</span>
+                </div>
+                <div class="xiao_tit">
+                    <em>时间</em>
+                    <span class="jintian">7天</span>
+                    <span class="jintian cur">30天</span>
+                    <div class="timebe" id="date">
+                        <span></span>
+                        <div id="widgetCalendar"></div>
+                    </div>
+                    <span class="chaxun" id="shjia">按商家查询<i></i></span>
+                    <span class="chaxun" id="lanmu">按栏目查询<i></i></span>
+                    
+                    <div class="cha_wrap">
+                        <div class="cha_con">
+                            <span class="cur">全部</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                        </div>
+                        <div class="cha_con">
+                            <span>身边有你大不同</span>
+                            <span>小崔说事</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                            <span>一号店特卖</span>
+                            <span>国美在线</span>
+                            <span>京东网上商城</span>
+                        </div>
+                        <span class="cha_close"></span>
+                    </div>
+                    <!-- <a href="javascript:;" class="daochu">导出营业额统计</a> -->
+                </div>    
+                <div class="tuli">
+                    <p class="qtu">趋势图</p>
+                    <div class="xiao_biao" id="xiao_biao"></div>
+                    <div class="xiao_tit2">
+                        单日明细数据
+                        <a href="javascript:;" class="daochu">导出营业额统计</a>
+                    </div>
+                    <table class="xiao_tab2">
+                        <thead>
+                            <tr class="head_border">
+                                <td width="12%" rowspan="2">时间</td>
+                                <td colspan="2">产品</td>
+                                <td colspan="2">团购</td>
+                                <td colspan="2">代金券</td>
+                                <td colspan="2">活动</td>
+                            </tr>
+                            <tr>
+                                <!-- <td width="5%">序号</td> -->
+                                <td width="11%">销售额(元)</td>
+                                <td width="11%">销售量(件)</td>
+                                <td width="11%">销售额(元)</td>
+                                <td width="11%">销售量(件)</td>
+                                <td width="11%">销售额(元)</td>
+                                <td width="11%">销售量(件)</td>
+                                <td width="11%">销售额(元)</td>
+                                <td width="11%">销售量(件)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td>2014-10-28</td>
+                                <td>96969</td>
+                                <td>564</td>
+                                <td>1256</td>
+                                <td>89</td>
+                                <td>34545</td>
+                                <td>345</td>
+                                <td>457456</td>
+                                <td>452</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="biao_fy">
+                    <p class="fy_p">
+                        <span class="fy_pre">pre</span>
+                        1/2
+                        <span class="fy_next">next</span>
+                        <input type="text" class="pages">
+                        <input type="button" class="tiaozhuan" value="跳转">
+                    </p>
+                </div>
+                </div>
+                <div class="tuli tuli2">
+                    <p class="qtu">销量占比图</p>
+                    <div class="xiao_biao2 clearb">
+                        <div class="pie1" id="pie1"></div>
+                        <div class="pie1" id="pie2"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    	
+    </div>
+</div>
+<script type="text/javascript" src="js/datepicker.js"></script>
+<script src="js/highcharts.js"></script>
+<script type="text/javascript"> 
+$(function(){
+    Highcharts.setOptions({
+        colors: ['#00aeef', '#ffa000', '#fa5a5a', '#44b549',
+                '#ff8c1e','#ffb428','#bef03c','#59dd43',
+                '#5ae4e4','#20c4c4','#6478f0','#436ecf',
+                '#9669e6','#b44be6','#7d3c82','#413c82',
+                '#a85032'
+                ],
+        credits:{enabled:false}
+    })
+
+    $('#xiao_biao').highcharts({
+        
+        chart:{
+            type:'line',
+            ignoreHiddenSeries:true
+
+        },
+        title: {
+            text: ""
+        },
+        tooltip: {
+            borderColor: '#666',
+            borderWidth: 1,
+            borderRadius: 2,
+            backgroundColor: '#000',
+            crosshairs: {
+                width: 1,
+                color: 'gray',
+                dashStyle: 'shortdot'
+            },
+            style:{
+                color:'#fff'
+            },
+            shared:true,
+            formatter: function () {
+                var s = '<b>' + this.x + '</b>';
+                $.each(this.points, function () {
+                    s += '<br/>' + this.series.name + ': ' +
+                        this.y + '件';
+                });
+                return s;
+            }
+        },
+        legend: {
+                    borderWidth: 0,
+                    itemStyle : {
+                        color: '#000000',
+                        fontFamily: 'Microsoft YaHei',
+                        fontSize: '14px',
+                        fontWeight: 'normal'
+                    },
+    //                y: 5,
+                    verticalAlign: 'bottom',
+        //            floating: true,
+                    maxHeight: 57 
+//                    symbolWidth: 12 
+    //                align: 'left'
+                },
+        xAxis: {
+            categories: ['2014-10-11','2014-10-12','2014-10-13','2014-10-14','2014-10-15','2014-10-16','2014-11-17','2014-12-18','2014-10-19','2014-10-20','2014-10-21','2014-10-22','2014-16-23','2014-10-24','2014-10-25','2014-10-26','2014-10-27','2014-10-28','2014-10-29','2014-10-30','2014-10-11','2014-10-11','2014-10-12','2014-10-13','2014-10-11','2014-10-11','2014-10-11','2014-10-11'],
+
+            tickmarkPlacement: 'on',
+            tickPositioner: function () {
+                var positions = [],
+                    tick = Math.floor(this.dataMin),
+                    increment = Math.ceil((this.dataMax - this.dataMin) / 7);
+
+                for (tick; tick - increment <= this.dataMax; tick += increment) {
+                    positions.push(tick);
+                }
+                return positions;
+            },
+            labels:{
+                style:{color:'#999',fontFamily:'Microsoft yahei'}
+            },
+            lineColor: "#C6C6C6",
+            lineWidth: 2
+        },
+        yAxis: {
+            labels: {
+                format: '{value}',
+                style:{color:'#999'}
+            },
+            gridLineColor:"#F2F3F4",
+            title: {
+                enabled: false
+
+            }
+        },
+        series: [{
+            name:'产品',
+            data:[12000, 12500, 12800, 9000, 9300, 11800, 11500,11000, 10900, 11000, 12000, 11500, 10800, 11000,10900, 11400, 11300, 11000, 12300, 11200, 11300,10700, 11000, 10800, 11000, 11100, 11000, 12300]
+            },
+            {
+            name:'团购',
+            data:[3000, 3500, 3600, 3453, 2342, 3454, 2342,2342, 4900, 5000, 6000, 5466, 4356, 2343,4900, 2345, 4300, 5000, 3234, 4000, 2334,3500, 4564, 3800, 4576, 5645, 7845, 6855]
+            },
+            {
+            name:'代金券',
+            data:[2000, 7457, 8423, 7454, 7355, 7464, 7563,8465, 9464, 8453, 9674, 8433, 7453, 6344,6434, 7254, 8632, 9446, 9423, 7354, 8355,6246, 6355, 7452, 7634, 8366, 7345, 6435]
+            },
+            {
+            name:'活动',
+            data:[2000, 4300, 1000, 6000, 5000, 8000, 3000,2000, 4000, 1000, 6000, 5000, 8000, 3000,2000, 4000, 1000, 6000, 5000, 8000, 3000,2000, 4000, 1000, 6000, 5000, 8000, 3000]           
+        }]
+    })
+
+    
+    var f = false;
+    var io = 0,io2=0;
+    $('.tq_tit span').on('click',function(){
+        var _index = $(this).index();
+        $(this).addClass('cur').siblings('span').removeClass('cur')
+         $('.tuli').eq(_index).show().siblings('.tuli').hide();
+        if(_index == 1 && f == false){
+            f = true;
+            // var myChart2 = echarts.init(document.getElementById('pie1')); 
+            // myChart2.setOption(option2);
+        }
+       
+
+    })
+    var das;
+    var now =new Date().format('yyyy-MM-dd');
+    var tomo = new Date((new Date()/1000-86400*30)*1000).format('yyyy-MM-dd');
+    $("#date span").html(tomo+' 至 '+now);
+    console.log(tomo)
+    $('#widgetCalendar').DatePicker({
+        flat: true,
+        date: [tomo,now],
+        current: '2015-03-14',
+        calendars: 2,
+        mode: 'range',
+        starts: 1,
+        onChange: function(formated) {
+                $('#date span').get(0).innerHTML = formated.join(' 至 ');
+                das = formated;
+        }
+    })
+    var state = false;
+    $('#date').bind('click', function(){
+        $('#widgetCalendar').stop().animate({height: state ? 0 : $('#widgetCalendar div.datepicker').get(0).offsetHeight}, 500);
+        state = !state;
+        return false;
+    });
+    $(".ta_cancle,.ta_sub").on("click",function(){
+        $('#widgetCalendar').stop().animate({height:0});
+        state = false
+    });
+    $(".chaxun").on("click",function(){
+        var idx = this.id;
+        $('.cha_con').hide();
+        $('.cha_wrap').fadeIn();
+        if(idx == "shjia"){
+            $('.cha_wrap .cha_con').eq("0").show();
+        }else{
+            $('.cha_wrap .cha_con').eq("1").show();
+        }
+    })
+    $(".cha_close").on("click",function(){
+        $('.cha_wrap').hide(); 
+    })
+    $(".datepickerMonth").on('click',function(e){
+        e.preventDefault();
+        return false;
+    })
+    
+    $('#pie1').highcharts({
+        chart: {
+            type: 'pie',
+            ignoreHiddenSeries:true
+        },
+        title: {
+            text: "各栏目销量占比",
+            align: 'center',
+            y:20,
+            x:-250
+        },
+        plotOptions: {
+            pie: {
+                size:320,
+                allowPointSelect: true,
+                cursor: 'pointer',
+                center: [200, 150],
+                // dataLabels: {
+                //     enabled: false
+                // }
+                dataLabels: {  
+                    enabled: true,  
+                    color: '#000',                        
+                    distance: -50,//通过设置这个属性，将每个小饼图的显示名称和每个饼图重叠 
+                    style: {                              
+                        fontSize: '10px',  
+                        lineHeight: '10px'  
+                    },  
+                    formatter: function(index) {   
+                        io++  ;
+                        if(io<4){
+                            return  '<span style="color:#333;font-weight:bold">' + this.point.name + '</span>';  
+                        }
+                    }  
+                }
+            }
+        },
+
+        series: [{
+            name:"销量占比",
+            data: [
+                {
+                    name: '身边有你大不同',
+                    y: 44.2,
+                    sliced: true,
+                    selected: true
+                },
+                ['午夜幽曲',       26.6],
+                ['黄金时段',       20],
+                ['大牌驾到',    3.1],
+                ['小花说事',    5.4]
+            ]
+        }]
+    });
+    $('#pie2').highcharts({
+        chart: {
+            type: 'pie',
+            ignoreHiddenSeries:true
+        },
+        title: {
+            text: "各商家销量占比",
+            align: 'center',
+            y:20,
+            x:-250
+        },
+        plotOptions: {
+            pie: {
+                size:320,
+                allowPointSelect: true,
+                cursor: 'pointer',
+                center: [200, 150],
+                dataLabels: {  
+                    enabled: true,  
+                    color: '#000',                        
+                    distance: -50,//通过设置这个属性，将每个小饼图的显示名称和每个饼图重叠 
+                    style: {                              
+                        fontSize: '10px',  
+                        lineHeight: '10px'
+                    },  
+                    formatter: function(index) {   
+                        io2++  ;
+                        if(io2<4){
+                            return  '<span style="color:#333;font-weight:bold">' + this.point.name + '</span>';  
+                        }
+                    }  
+                }
+            }
+        },
+
+        series: [{
+            name:"销量占比",
+            data: [
+                // ['小崔服装',   44.2],
+                {
+                    name: '小崔服装',
+                    y: 44.2,
+                    sliced: true,
+                    selected: true
+                },
+                ['金牌化妆',       26.6],
+                ['淘淘小店',       20],
+                ['喵星人',    3.1],
+                ['于都美食',    5.4]
+            ]
+        }]
+    });
+
+    var pie;
+    var browser=navigator.appName 
+    var b_version=navigator.appVersion 
+    var version=b_version.split(";"); 
+    var trim_Version=version[1].replace(/[ ]/g,""); 
+    var ie7 = "Microsoft Internet Explorer" && trim_Version=="MSIE7.0";
+    var ie8 = "Microsoft Internet Explorer" && trim_Version=="MSIE8.0";
+
+    if(ie7 || ie8){alert(12)
+        $.each(['#pie1','#pie2'],function(idx,val){
+            pie = $(val).highcharts();
+            pie.setTitle({x:0,y:370});
+        })
+    }
+    
+})
+
+Date.prototype.format =function(format){
+    var o = {
+        "M+" : this.getMonth()+1, 
+        "d+" : this.getDate(), 
+        "h+" : this.getHours(), 
+        "m+" : this.getMinutes(), 
+        "s+" : this.getSeconds(), 
+        "q+" : Math.floor((this.getMonth()+3)/3), 
+        "S" : this.getMilliseconds() 
+    }
+    if(/(y+)/.test(format)) 
+    format=format.replace(RegExp.$1,(this.getFullYear()+"").substr(4- RegExp.$1.length));
+    for(var k in o)if(new RegExp("("+ k +")").test(format))
+        format = format.replace(RegExp.$1,
+        RegExp.$1.length==1? o[k] :("00"+ o[k]).substr((""+ o[k]).length));
+    return format;
+}
+</script>
+</body>
+</html>

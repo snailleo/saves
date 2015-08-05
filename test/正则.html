@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>正则</title>
+
+<script type="text/javascript">
+
+var str = "welcome to microsoft and see this";
+var reg = /mic/;
+var reg2 = /o/g;
+
+
+//replace
+console.log("replace: "+str.replace(reg,"AAA"));
+
+//match
+console.log("match: "+ str.match(reg2))
+
+//exec  只返回匹配的第一个
+console.log("exec: " + reg2.exec(str));
+
+//search 
+console.log("search: " + str.search(reg2));
+
+//test  等于exec!=null
+console.log("test: " + reg2.test(str))
+
+/*--------------------------------------*/
+
+console.log("/-----------------------------------/")
+
+var reg3 = /se+/g;
+var reg4 = /se*/g;
+var reg5 = /se?/g;
+var reg6 = /^wes$/
+
+console.log(str.match(reg3));
+console.log(str.match(reg4));
+console.log(str.match(reg5));
+console.log(str.match(reg6));
+
+
+</script>
+
+ </head>
+ <body>
+  <h1>var str = "welcome to microsoft and see this";</h1>
+ </body>
+</html>

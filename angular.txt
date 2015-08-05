@@ -1,0 +1,7 @@
+1.directive
+    restrict: 指定声明格式：E(元素) A(属性) C(类) M(注释)
+    replace: true  将自定义标签中dom中移除
+
+    http://www.cnblogs.com/rohelm/p/4051437.html
+
+

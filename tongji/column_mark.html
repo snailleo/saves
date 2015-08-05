@@ -1,0 +1,442 @@
+﻿<html>
+<head _wxlaelhepjgkhpnfpeodbobgikmbjecnne_="shake_1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>栏目排行榜_制作质量</title>
+<link type="text/css" href="css/active.css" rel="stylesheet" />
+<link type="text/css" href="css/base.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="Top">
+    <div class="TopMain">
+        <div class="topLogo1"></div>
+        <div class="topMDleft">
+            <a>
+            <font><i></i>小花<span>(100000)</span></font>
+            </a>
+            <a style="color:#b1b1b1;margin-left: 20px;">退出</a>
+        </div>
+    </div>
+</div>
+<div class="hr_25"></div>
+<div class="orderMain">
+    <!--左侧列表-->
+    <div class="ltMainNav lt">
+        <dl>
+            <dt class="leftIco1">平台管理</dt>
+            <dd>产品分类设置</dd>
+            <dd>推荐位设置</dd>
+            <dd>短信系统设置</dd>
+        </dl>
+        <dl>
+            <dt class="leftIco2">资源管理</dt>
+            <dd>产品管理</dd>
+            <dd>企业管理</dd>
+        </dl>
+        <dl>
+            <dt class="leftIco3">订单管理</dt>
+            <dd>订单列表</dd>
+            <dd class="selected">收款账号设置</dd>
+        </dl>
+    </div>
+    <!--宿回伸开ltNav_pop-->
+    <div class="ltMain_pop" style="display: block;"></div>
+
+<!--右侧内容-->
+<div class="rtMainCon">
+    <div class="rtMain_Frame">
+    <!--通用头部-->
+        <div class="pubTit" >
+            <ul>
+                <li class="lt">
+                    <h2 class="nav_page color_blue">栏目制作质量排行</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="breadcrumb" style="position:relative;">
+            <div class="column_num" style="padding-top:15px;">
+                <ul class="tabs" id="tabs" style="position:absolute;left:0;top:10px;">
+                    <li>月排行</li>
+                    <li>季排行</li>
+                    <li>年度排</li>
+                </ul>
+                <ul class="tab_conbox" id="tab_conbox" style="position:absolute;top:42px;border-top:none!important;">
+                    <li class="tab_con">
+                        <p class="prev"></p>
+                        <span id="add_year" class="add_year">2015</span>
+                        <p class="next"></p>
+                        <div class="tab_year">
+                            <ol>
+                                <li>
+                                    <a href="#">1月</a><a href="#">2月</a><a href="#">3月</a><a href="#">4月</a><a href="#">5月</a><a href="#">6月</a><a href="#">7月</a><a href="#">8月</a><a href="#">9月</a><a href="#">10月</a><a href="#">11月</a><a href="#">12月</a>
+                                </li>
+                                <li>
+                                    <a href="#">1月</a><a href="#">2月</a><a href="#">3月</a><a href="#">4月</a><a href="#">5月</a><a href="#">6月</a><a href="#">7月</a><a href="#">8月</a><a href="#">9月</a><a href="#">10月</a><a href="#">11月</a><a href="#">12月</a>
+                                </li>
+                                <li>
+                                    <a href="#">1月</a><a href="#">2月</a><a href="#">3月</a><a href="#">4月</a><a href="#">5月</a><a href="#">6月</a><a href="#">7月</a><a href="#">8月</a><a href="#">9月</a><a href="#">10月</a><a href="#">11月</a><a href="#">12月</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="tab_con">
+                        <p class="prev"></p>
+                        <span id="add_year" class="add_year2">2015</span>
+                        <p class="next"></p>
+                        <div class="tab_year">
+                            <ol class="child_ol">
+                                <li>
+                                    <a href="#">第1季度</a><a href="#">第二季度</a><a href="#">第三季度</a><a href="#">第四季度</a>
+                                </li>
+                                <li>
+                                    <a href="#">第1季度</a><a href="#">第二季度</a><a href="#">第三季度</a><a href="#">第四季度</a>
+                                </li>
+                                <li>
+                                    <a href="#">第1季度</a><a href="#">第二季度</a><a href="#">第三季度</a><a href="#">第四季度</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="tab_con">
+                    	<!-- <p class="prev"></p>
+                        <span id="add_year" class="add_year2"></span>
+                        <p class="next"></p> -->
+                        <div class="tab_year">
+                            <ol>
+                                <li style="overflow-y:scroll">
+                                    <a href="#">2014</a><a href="#">2014</a><a href="#">2013</a><a href="#">2012</a><a href="#">2011</a><a href="#">2010</a><a href="#">2009</a><a href="#">2008</a><a href="#">2007</a><a href="#">2006</a><a href="#">2005</a><a href="#">2004</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">2014</a><a href="#">2014</a><a href="#">2013</a><a href="#">2012</a><a href="#">2011</a><a href="#">2010</a><a href="#">2009</a><a href="#">2008</a><a href="#">2007</a><a href="#">2006</a><a href="#">2005</a><a href="#">2004</a>
+                                </li>
+                                <li>
+                                    <a href="#">2014</a><a href="#">2014</a><a href="#">2013</a><a href="#">2012</a><a href="#">2011</a><a href="#">2010</a><a href="#">2009</a><a href="#">2008</a><a href="#">2007</a><a href="#">2006</a><a href="#">2005</a><a href="#">2004</a>
+                                </li> -->
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+                <h1><span><img src="images/elx_03.png" width="24" height="24" /></span><a href="#">导出当前排行榜</a></h1>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="userManage" style="padding:0 5px 0 5px;">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" class="search_table">
+                    <thead>
+                        <tr>
+                            <th width="7%">排名</th>
+                            <th width="15%">栏目名称</th>
+                            <th width="16%">产品销售额（元）</th>
+                            <th width="16%">团购销售额（元）</th>
+                            <th width="16%">代金券销售额（元）</th>
+                            <th width="15%">活动销售额（元）</th>
+                            <th width="15%">总销售额（元）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="blue_01"><i>1</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="blue_02"><i>2</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="blue_03"><i>3</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>4</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="color_normal"><i>5</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>6</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="color_normal"><i>7</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>8</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="color_normal"><i>9</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>10</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" class="search_table dis">
+                    <thead>
+                        <tr>
+                            <th width="7%">排名</th>
+                            <th width="15%">栏目名称</th>
+                            <th width="16%">直播收听量（次）</th>
+                            <th width="16%">直播收听时长（件）</th>
+                            <th width="16%">录播收听量（次）</th>
+                            <th width="15%">录播收听时长（件）</th>
+                            <th width="15%">收藏量（元）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="blue_01"><i>1</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="blue_02"><i>2</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="blue_03"><i>3</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>4</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="color_normal"><i>5</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>6</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="color_normal"><i>7</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>8</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr>
+                            <td class="color_normal"><i>9</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="color_normal"><i>10</i></td>
+                            <td>身边有你大不同</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                            <td>89690</td>
+                            <td>126580</td>
+                        </tr>
+                    </tbody>
+                </table>
+           </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    jQuery.jqtab = function(tabtit,tab_conbox,shijian){ 
+        $(tabtit).find("li").bind(shijian,function(){
+          $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
+            var activeindex = $(tabtit).find("li").index(this);
+            $(tab_conbox).children().eq(activeindex).slideDown(300).show().siblings().slideUp(300).hide();
+            return false;
+        });
+    };
+
+$.jqtab("#tabs","#tab_conbox","mouseenter");    
+function DY_scroll(wraper,prev,next,year,yearNum,yearNum2,speed){
+	var wraper1 = $(wraper).first();
+	var prev1 = $(prev).first(),
+		prev2 = $(prev).eq(1);
+		prev3 = $(prev).eq(2);
+	var next1 = $(next).first(),
+		next2 = $(next).eq(1);
+		next3 = $(next).eq(2);
+	var year1 = $(year).find('ol').eq(0);
+	var year2 = $(year).find('ol').eq(1);
+	var year3 = $(year).find('ol').eq(2);
+	var w = year1.find('li').outerWidth(true);
+	var s = speed;
+	var yearNum = Number($(yearNum).text()),
+		yearNum2 = Number($(yearNum2).text());
+	next1.click(function(e){
+		year1.animate({'margin-left':-w},function(){
+		   year1.find('li').eq(0).appendTo(year1);
+		   year1.css({'margin-left':0});
+	});
+		yearNum++;
+		$('.add_year').first().text(yearNum);
+        e.stopPropagation();
+	});
+   prev1.click(function(e){
+		year1.find('li:last').prependTo(year1);
+		year1.css({'margin-left':-w});
+		year1.animate({'margin-left':0});
+		yearNum--;
+		$('.add_year').first().text(yearNum);
+        e.stopPropagation();
+   });
+   next2.click(function(e){
+		year2.animate({'margin-left':-w},function(){
+		   year2.find('li').eq(0).appendTo(year2);
+		   year2.css({'margin-left':0});
+		});
+		yearNum2++;
+		$('.add_year2').text(yearNum2);
+        e.stopPropagation();
+	});
+   prev2.click(function(e){
+		year2.find('li:last').prependTo(year2);
+		year2.css({'margin-left':-w});
+		year2.animate({'margin-left':0});
+		yearNum2--;
+		$('.add_year2').text(yearNum2);
+        e.stopPropagation();
+   });
+   next3.click(function(){
+		year3.animate({'margin-left':-w},function(){
+		   year3.find('li').eq(0).appendTo(year3);
+		   year3.css({'margin-left':0});
+		});
+		//yearNum2++;
+		//$('.add_year2').text(yearNum2);
+	});
+   prev3.click(function(){
+		year3.find('li:last').prependTo(year3);
+		year3.css({'margin-left':-w});
+		year3.animate({'margin-left':0});
+		//yearNum2--;
+		//('.add_year2').text(yearNum2);
+   });
+   //回显
+  $('.tab_year').eq(0).find('a').click(function(){
+	var year = $('.add_year').text();
+		month = $(this).text();
+	$('.tabs li').first().text(year+'年'+month);
+	$(".tab_con").hide();
+  })
+  $('.tab_year').eq(1).find('a').click(function(){
+	var year = $('.add_year2').text();
+		month = $(this).text();
+	$('.tabs li').eq(1).text(year+'年'+month);
+	$(".tab_con").hide();
+  })
+  $('.tab_year').eq(2).find('a').click(function(){
+	var year = $('.add_year').text();
+		month = $(this).text();
+	$('.tabs li').last().text(month+'年');
+	$(".tab_con").hide();
+  })
+};  
+DY_scroll('.tab_con','.prev','.next','.tab_year','.add_year','.add_year2',5);
+});
+$('body').on('click',function(){
+    $('.tab_con').hide();
+})
+</script>
+</body>

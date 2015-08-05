@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+/*分享主播*/
+.host_content{width:100%; position:relative;}
+.host_introduction{padding:20px 10px;}
+.host_introduction dl{}
+.host_introduction dt{width:65px;height:65px;margin-right:18px;float:left;}
+.host_introduction dd{overflow:hidden;}
+.host_introduction dt img{-webkit-border-radius:32px;}
+.host_introduction dd h1{font-size:18px;font-weight:bold;color:#555;margin-top:5px;margin-bottom:5px;}
+.host_introduction dd h1 span{color:#9f9f9f;font-size:14px;font-weight:normal;padding-left:10px;}
+.host_introduction dd p{padding-top:3px;font-size:12px;color:#9f9f9f;line-height:18px;}
+.program_list{background:#fff;position:relative}
+.tan_p{height:260px;}
+.program_list h1{display:-webkit-box;-webkit-box-align:center;height:40px;font-size:14px;background:#eee;
+padding-left:10px;color:#555;}
+.list ul{padding-left:10px}
+.list .tan{padding-left:0;margin:0 20px;;}
+.list_parent li{line-height:44px;border-bottom:1px solid #eee;position:relative;}
+.list_parent li a{color:#999;}
+.list_child li:first-child{border-top:1px solid #eee}
+.list_parent li:last-child{border:none;}
+.icon_true{background:url(../images/icon_true.png) no-repeat;position:absolute;right:0;top:15px;display:block;width:19px;height:28px;background-size:10px;}
+.icon_down{background:url(../images/icon_down.png) no-repeat;position:absolute;right:3px;top:15px;display:block;width:21px;height:10px;background-size:18px;}
+#warp_program{position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+overflow: auto!important;}
+.list_child{background:#fff;overflow:hidden;display:none;}
+.list_child li{font-size:14px;}
+.list_child li span{color:#bbb;padding-right:10px;}
+.list_child li a{color:#666;}
+.download{height:80px;padding:0 10px;display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:center;position:relative;}
+.downloadBtn{background:#649af9;-webkit-border-radius:10px;color:#fff;border:none;padding:20px 0;width:90%;text-align:center;display:block;font-size:14px;}
+.icon_download{background:url(../images/download.png) no-repeat;width:20px;height:20px;display:block;position:absolute;background-size:15px;left:56px;bottom:28px;}
+
+/*栏目分享*/
+.share_column{padding:10px 10px 20px 10px;}
+.share_column dl{display:-webkit-box;}
+.share_column dl dt{width:80px;height:80px;margin-right:18px;}
+.share_column dl dd h1{font-size:18px;font-weight:bold;color:#555;margin:5px 0;}
+.share_column dl dd p{padding-top:3px;color:#9f9f9f;font-size:14px;line-height:23px;}
+.share_column dl dd p a{color:#2f88f0;padding-right:10px;}
+.programBOx{height:250px;}
+.host_introduction dd p a{color:#2f88f0;}
+.columnBOx{padding:15px 0;position:relative;}
+.columnBOx p{color:#999;font-size:14px;word-break: break-all;word-wrap: break-word;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;line-height:20px;height:60px;}
+.more_column{color:#2f88f0;position:absolute;right:10px;display:block;bottom:-10px;}
+
+/*分享直播*/
+.program_list h1.list_h1{display:-webkit-box;-webkit-box-align:center;height:40px;font-size:14px;color:#6b6b6b;padding-left:0px!important;background:#f8f8f8;border-bottom:1px solid #d2d2d2;}
+.list ul li{line-height:44px;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.list ul li span{color:#bbb;padding-right:10px;}
+.list ul li a{color:#666;}
+.pop_program{background:#f8f8f8!important;}
+
+
+/*电台下载*/
+.body_bg{width:100%;height:100%;background:url(../images/bg_02.png) no-repeat;position:relative;background-size:100%;}
+.download_box{position:absolute;bottom:0;width:100%;height:167px;border-top:5px solid #fd4032;background:#fff;}
+.download_box p{display:-webkit-box;-webkit-box-pack:center;line-height:24px;font-size:18px;color:#969696;}
+.download_box p:first-child{padding-top:20px;}
+.downBox{display:-webkit-box;-webkit-box-pack:center;padding-top:20px;}
+.downBox a{width:140px;height:44px;display:inline-block;}

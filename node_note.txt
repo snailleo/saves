@@ -1,0 +1,48 @@
+1.supervisor
+  npm -g install supervisor
+  supervisor ./bin/www
+
+  //get /search?q=tobi
+  req.query.q
+  // => tobi
+
+  //post user[name]=tobi&user[email]=163
+  req.body.user.name
+  //tobi
+
+  //post {"name":"tobi"}
+  req.body.name
+  //tobi
+
+  req.query  处理get请求
+  req.body   处理post请求
+  req.params 处理/:xxx 形式的get请求
+  req.param() 处理get和post请求，查找优先级高到低req.params > req.body >req.query
+
+ 2.mongodb
+  mongod.exe --logpath=D:\Program Files\mongodb\data\log\log.txt --dbpath=D:\Program Files\mongodb\data\db
+  mongod.exe --install --logpath=D:\Program Files\mongodb\data\log\log.txt --dbpath=D:\Program Files\mongodb\data\db --install
+  net start mongodb 启动mongodb服务
+  net stop mongodb 启动mongodb服务
+
+  输入mongo:
+  show dbs
+  use mytest
+  db.createCollection("user") //创建表
+  show collections //查看集合数据
+  db.user.find() //查看表数据
+  db.user.save({name:'li',age:25,sex:true}) //添加数据
+
+ 3.node
+  按两次ctrl C 退出node
+  npm install -g express
+  npm cache clean 安装失败清理缓存
+  npm install -g express-generator 安装express工具
+  npm install express-session
+
+  4.命令行
+  创建文件夹 mkdir
+
+  grunt serve --allow-remote 
+  bower install
+

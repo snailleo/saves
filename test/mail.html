@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>mail</title>
+  <style type="text/css">
+  html{height:100%}
+  body{height:100%}
+  *{margin:0;padding:0;}
+  #con_l{width:100px;position:absolute;border:1px solid red;}
+  #con{width:1000px;height:100px;position:relative;zoom:1}
+  #con_r{position:absolute;left:120px;right:0;top:0;border:1px solid red;overflow:hidden;bottom:0;z-index:999;zoom:1}
+  .slide{position:fixed;width:50px;height:50px;bottom:50px;left:50%;margin-left:100px;border:1px solid;_position:absolute; _top:expression(documentElement.scrollTop + documentElement.clientHeight - 100 + "px");}
+
+  .con2{width:100%;height:auto;}
+  .con2_l{float:left;position:relative;width:100px;height:100%;border:1px solid #ccc;margin-right:50px;}
+  .con2_r{overflow:hidden;height:100%;border:1px solid #ccc;}
+  </style>
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script>
+  function reSize(){
+	//var _w = $(window).width();
+	//var _h = $(window).height();
+	//console.log(  _w+"//"+_h );
+	var _h = document.body.clientHeight || document.documentElement.clientHeight;
+	var _w = document.body.clientWidth || document.documentElement.clientWidth;
+	//alert(  _w+"//"+_h )
+	$(".con2").height(_h - 100) ;
+  }
+  window.onresize = function(){reSize();};
+  window.onload = function(){reSize();}
+  //console.log(reSize());
+  
+  </script>
+ </head>
+ <body>
+   <!--<div id="con">
+  	<div id="con_l">left</div>
+  	<div id="con_r"><iframe src="http://www.baidu.com" frameborder="0" style="width:100%;height:100%" scrolling="auto"></iframe></div>
+  </div>-->
+
+  <div class="con2">
+  	<div class="con2_l">left</div>
+	<div class="con2_r">right</div>
+  </div>
+
+  <div class="slide">123</div>
+
+  <script type="text/javascript">
+  /*var shu = document.getElementById("con");
+  shu.setAttribute("ads","123");
+  shu.className = "con";*/
+  </script>
+ </body>
+</html>

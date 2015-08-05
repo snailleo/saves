@@ -1,0 +1,302 @@
+掌门	192.168.2.101	http://192.168.2.101
+祥云	192.168.2.106	http://qyht.gaiay.net.cn
+美味点	192.168.2.108	http://192.168.2.108:8080
+电商	192.168.2.104	http://fmdemo.gaiay.net.cn:8088
+mantis	192.168.2.104	http://mantis.gaiay.net.cn/login_page.php
+
+首页  http://192.168.0.118:8081/app/index.do?token=b2fd8f14b5795d7ea-8000
+代金券  http://fmdemo.gaiay.net.cn/app/gift/gift.do
+消费码  http://192.168.0.236:8081//app/order/order!orderOtwoO.do?token=b2fd8f14a36fe3fbd-8000
+分享播放  http://192.168.0.183:8081/app/goods/share!detail.do?id=0dbc37148f89c307f-7ff9&stationId=1&programId=999
+
+http://192.168.0.238:8081/app/share!anchor_detail.do?stationId=1&id=1
+http://192.168.0.238:8081/app/share!program.do?stationId=1&id=1200
+http://192.168.0.238:8081/app/goods/share!detail.do?stationId=1&id=61e066149e5f84fea-8000&programId=1200
+http://192.168.0.238:8081/app/share!anchor_detail.do?stationId=1&id=1
+http://192.168.0.238:8081/app/share!program_detail.do?stationId=1&id=1
+
+首页：http://fmdemo.gaiay.net.cn:8088/app/share.do?stationId=1
+     http://fmdemo.gaiay.net.cn:8088/app/activitie/share!list.do?stationId=1
+栏目列表：http://fmdemo.gaiay.net.cn:8088/app/share!program_list.do?stationId=1 
+主播列表：http://fmdemo.gaiay.net.cn:8088/app/share!anchor_list.do?stationId=1
+
+http://fmdemo.gaiay.cn/app/index.do?token=c696ba14b6dbb6c96-7e95
+
+晒单 http://192.168.0.164:8081/app/interactive/interactive.do?token=b2fd8f14b5795d7ea-8000
+
+安装chrome代码插件 https://chrome.google.com/webstore/detail/prism-pretty/hjjcdjnncffbbhlglkipjhljmocnehim
+
+C:\Program Files\Git\bin;C:\Program Files\Git\cmd
+
+git安装安装git http://yunpan.cn/cy7D2zicJRBpM 访问密码 750f
+需要配置你的Git到path，假如你的git安装目录是”C:\Program Files (x86)\Git”，在path中加入git的bin和cmd目录，如C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\cmd
+
+邮箱：http://ym.163.com/
+      liuyang@gaiay.cn   57907294   59527000
+
+国产浏览器切换为高速模式 <meta name="renderer" content="webkit">
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+一 . js
+
+网页嵌入腾讯视频 http://blog.sina.com.cn/s/blog_7f95e24b0101db2r.html
+
+js 库 underscore  集合数组，面向对象函数库
+
+call apply http://www.cnblogs.com/KeenLeung/archive/2012/11/19/2778229.html
+
+http://yunpan.cn/cKNBsvTfb8VDx 提取码: 2252
+
+css填坑 http://segmentfault.com/a/1190000000362621
+
+862350
+wap站点跳转
+node视频：http://pan.baidu.com/s/1mg9RfGs      uj10
+
+判断IOS版本号：
+function gt_ios4() {
+    // 判断是否 iPhone 或者 iPod
+    if((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i))) {
+        // 判断系统版本号是否大于 4
+        return Boolean(navigator.userAgent.match(/OS [5-9]_\d[_\d]* like Mac OS X/i));
+    } else {
+        return false;
+    }
+}
+
+iscroll5: http://jsbin.com/AtIGeKe/latest
+自动轮播：touchslide  //  swipe.js
+
+原始的Swipe JS，当你用点击或者手势控制了之后，轮播图就不会自动滚动了，目前sina.cn网页也是这个设计逻辑，
+但是有些客户不给他自动滚动心理就不舒服，解决办法是修改原swipe.js的stop函数如下：
+
+function stop() {
+    //delay = 0;
+    delay = options.auto > 0 ? options.auto : 0;
+    clearTimeout(interval);
+  }
+
+css sprite http://cn.spritegen.website-performance.org/
+css 晃动 http://elrumordelaluz.github.io/csshake/
+node安装  http://www.cnblogs.com/Darren_code/archive/2011/10/31/2207063.html
+
+手势：jgestures.js
+博客园：http://www.cnblogs.com/
+掌门：http://zmp.gaiay.cn/zhangmen/discover#weixin.mp.qq.com
+
+iscroll中input失效：
+onBeforeScrollStart:function(e){
+	var nodeType = e.explicitOriginalTarget ? e.explicitOriginalTarget.nodeName.toLowerCase():(e.target ? e.target.nodeName.toLowerCase():'');
+	if(nodeType !='select'&& nodeType !='option'&& nodeType !='input'&& nodeType!='textarea') 
+		e.preventDefault();
+		e.stopPropagation();
+	}
+
+
+zhaodong@camelotchina.com
+
+iscrll跟随卡顿滑动： document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+判断类型
+console.log(Object.prototype.toString.call(123)) //[object Number]
+console.log(Object.prototype.toString.call('123')) //[object String]
+console.log(Object.prototype.toString.call(undefined)) //[object Undefined]
+console.log(Object.prototype.toString.call(true)) //[object Boolean]
+console.log(Object.prototype.toString.call({})) //[object Object]
+console.log(Object.prototype.toString.call([])) //[object Array]
+console.log(Object.prototype.toString.call(function(){})) //[object Function]
+
+Math.max.apply(null,[12,2])求数组中数字最大值
+
+  parentNode childNodes
+  appendChild insertBefore
+
+json校验  jsonlint
+
+add() 方法用于向 <select> 添加一个 <option> 元素。
+jq add
+
+DOM方法：
+父窗口操作IFRAME：window.frames["iframeSon"].document
+IFRAME操作父窗口: window.parent.document
+
+typeof类型：object undefined Boolean string number
+
+jq求高
+alert($(window).height()); //浏览器时下窗口可视区域高度
+alert($(document).height()); //浏览器时下窗口文档的高度
+alert($(document.body).height());//浏览器时下窗口文档body的高度
+alert($(document.body).outerHeight(true));//浏览器时下窗口文档body的总高度 包括border padding margin
+alert($(window).width()); //浏览器时下窗口可视区域宽度
+alert($(document).width());//浏览器时下窗口文档对于象宽度
+alert($(document.body).width());//浏览器时下窗口文档body的高度
+alert($(document.body).outerWidth(true));//浏览器时下窗口文档body的总宽度 包括border padding margin
+  
+alert($(document).scrollTop()); //获取滚动条到顶部的垂直高度
+alert($(document).scrollLeft()); //获取滚动条到左边的垂直宽度
+
+js原始数据类型:undefined null Boolean Number String
+typeof返回值：undefined object boolean number string function
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+二. CSS3
+设置table的CSS为{border-collapse:collapse;border:none;},{border-spacing:0;border-collapsez:collapse}
+再设置td的CSS为{border:solid #000 1px;}而且Word也能认出这种设置。
+
+1. 允许元素穿透：pointer-events:none
+
+2. 修改placeholder颜色：
+	::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    #999;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color:    #999;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color:    #999;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    color:    #999;
+	}
+
+3. autofocus
+   自动获得焦点 <input type="text" autofocus />
+
+4. 表单类型： number tel search range(数值范围,移动端不支持) url email
+
+5. background多重背景
+
+6 gradient: 颜色渐变
+
+7 position:-webkit-sticky;
+
+8. animation: name duration timing-function delay iteration-count direction;
+    循环：infinite
+    动画结束保持最后一帧属性：-webkit-animation-fill-mode:forwards
+
+    实例网站：http://c.lagou.com/cs/show/44291.html?from=timeline&isappinstalled=0
+    http://biehu.me/test/tudou/?from=singlemessage&isappinstalled=0
+    http://mini.mcchina.com/miaoxiuzhan/?from=singlemessage&isappinstalled=0
+    http://biz.ifeng.com/news/special/xijiulianghui/?from=singlemessage&isappinstalled=0#rd
+    http://www.mcchina.com/mini/2015fwfashionweekny04/?from=timeline&isappinstalled=0#rd
+
+9. background-size:contain / cover
+
+10. 常见重排元素：
+     width	  height	padding	        margin	
+     display	  border-width	border	        top
+     position	  font-size	float	        text-align
+     overflow-y	  font-weight	overflow	left
+     font-family  line-height	vertical-align	right
+     clear	  white-space	bottom	        min-height
+    重绘元素
+     color	border-style    visibility    background
+     text-decoration   background-image   background-position background-repeat
+     outline-color   outline   outline-style   border-radius
+     outline-width   box-shadow   background-size
+
+ 11. Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示, 
+     可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决
+
+单行点点点：word-break:break-all;word-wrap:break-word;text-overflow:ellipsis;overflow:hidden;
+            white-space:nowrap;
+
+多行点点：overflow : hidden;text-overflow: ellipsis;display: -webkit-box;
+-webkit-line-clamp: 2;-webkit-box-orient: vertical;
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+三. HTML5
+
+querySelector()接受一个css选择器作为参数,然后返回DOM中匹配的第一个元素
+querySelectorAll()接受一个css选择器作为参数,然后返回DOM中匹配的元素的集合数组
+举个栗子：document.querySelector("#wrapper") // 取得DOM中第一个id= “wrapper”的元素
+举个栗子：document.querySelector(".wrapper") // 取得DOM中第一个class= “wrapper”的元素
+举个栗子：document.querySelector("p") // 取得DOM中第一个<p></p>元素
+
+举个栗子：document.querySelectorAll("p") // 取得DOM中所有的<p></p>元素......类比于querySelector()
+
+
+1. touch事件
+	var _y, _ey;
+	$("body").on("touchstart",function(){
+		//var touch = e.touches[0];
+		_y = event.targetTouches[0].pageY;
+	})
+	$("body").on("touchmove",function(){
+		//var touch = e.touches[0];
+		_ey = event.targetTouches[0].pageY;
+		//alert(_ey);
+		if(_ey < _y){alert("up")}
+		else{alert("down")}
+	})
+
+2. 阻止滚动
+   一些移动设备有缺省的touchmove行为，比如说经典的iOS overscroll效果，
+   当滚动超出了内容的界限时就引发视图反弹。这种做法在许多多点触控应用中会带来混乱，但要禁用它很容易。
+	document.body.addEventListener('touchmove', function(event) { 
+		event.preventDefault(); 
+	}, false);
+
+3.touchmove事件只触发一次的问题  (http://www.web-tinker.com/article/20364.html)
+
+4、如何去除iOS和Android中的输入URL的控件条 你的老板或者PD或者交互设计师可能会要求你：
+   能否让我们的webapp更加像nativeapp，我不想让用户看见那个输入url的控件条？
+   答案是可以做到的。我们可以利用一句简单的javascript代码来实现这个效果
+
+   setTimeout(scrollTo,0,0,0);
+	 
+   请注意，这句代码必须放在window.onload里才能够正常的工作，
+   而且你的当前文档的内容高度必须是高于窗口的高度时，这句代码才能有效的执行。
+
+5. <link rel=”dns-prefetch” href=”http://a0.twimg.com”/> 
+   DNS Prefetch也就是DNS预获取，也是前段优化的一部分。在前段优化中关于DNS的有两点：
+   一是减少DNS的请求次数，第二个就是进行DNS预先获取。
+   DNS Prefetch应该尽量的放在网页的前面，推荐放在<meta charset=”/>后面。
+
+6. 跨域
+   header("Content-Type:application/json;charset=utf-8");
+   header("Access-Control-Allow-Origin:*");
+   header("Access-Control-Allow-Methods:POST,GET");
+
+7. head.style.cssText="width:200px;height:70px;display:bolck";批量添加样式
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+四. sublime text
+
+  ctrl + p   :   goto anything
+
+  ctrl + shift + p ： 选择语法模式
+
+  ctrl + d  :  单行游标 （ctrl + k 取消选择）
+  alt + f3 :  多行游标
+
+  ctrl + shift + d : 单行复制
+
+  ctrl + shift + v : 保持缩进复制
+
+  ctrl + shift + 上箭头  ： 向上移动代码
+
+  ctrl + shift + k ：删除一行
+
+  安装浏览器预览插件 http://blog.csdn.net/ranmudaofa/article/details/38457215
+
+  window + E 打开资源管理器
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+五.  zepto
+
+  display:none无法计算尺寸
+  cssShow = {position:"absolute",visibility:"hidden",display:"block"}
+  return elem.offsetWidth === 0 && rdisplayswap.test(jQuery.css(elem,"display"))?
+	jQuery.swap(elem,cssShow,function(){
+		return getWidthOrHeight(elem,name,extra);
+	});
+	getWidthOrHeight(elem,name,extra);
+
+
+ie6 position:fixed  
+_position:absolute; _top:expression(documentElement.scrollTop + documentElement.clientHeight * 1/4 + "px");

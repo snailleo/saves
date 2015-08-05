@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	.wrap{position:absolute;top:0;left:0;bottom:0;width:100%;}
+	.wrap2{position:absolute;top:50px;left:0;height:200px;width:100%;}
+	.con2{height:1000px;background:red;}
+	.con1{background:#ccc;height:2000px;}
+	</style>
+	<script type="text/javascript" src="js/iscroll-lite.js"></script>
+	<script>
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.addEventListener("DOMContentLoaded",function(){
+		var scroll = new iScroll("wrap");
+		var scroll2 = new iScroll("wrap2")
+	})
+	</script>
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<div class="scroll">
+			<div class="con1">
+				<div class="wrap2" id="wrap2">
+					<div>
+						<div class="con2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

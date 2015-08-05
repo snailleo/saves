@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>call apply</title>
+</head>
+<body>
+	
+</body>
+<script>
+function test(fn){
+	var arg = [1,2,3];
+	fn.apply(this,arg);
+}
+var func = function(a){
+	console.log(a);
+}
+test(func);
+</script>
+</html>

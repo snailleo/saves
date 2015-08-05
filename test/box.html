@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型</title>
+	<style>
+	*{padding:0;margin:0;}
+	ul li{list-style: none}
+	.box{width:200px;height:50px;border:2px solid;word-break:break-all;word-wrap:break-word;text-overflow:ellipsis;overflow:hidden;
+            white-space:nowrap;}
+    .boxflex{display:-webkit-box;width:600px;border:1px solid;height:100px;-webkit-box-orient:vertical;}
+    .boxflex li{-webkit-box-flex:1;border:1px solid #ccc;}
+    .he{width:300px;height:200px;margin-top:20px;background:#000;opacity:.3}
+    .he2{width:200px;height:100px;margin-top:10px;background:red;opacity:.7}
+	</style>
+</head>
+<body>
+	<div class="box">
+		123了深刻的话费卡还是得发卡机了深刻的回来付款哈斯卡兰多夫了深刻的减肥了就散了了深刻的积分卡了深刻的减肥蓝色的空间看风景
+	</div>
+	<ul class="boxflex">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<div class="he">
+		<div class="he2">123</div>
+	</div>
+</body>
+</html>

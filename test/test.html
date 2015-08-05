@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+	*{margin:0;padding:0;}
+	html,body{height:100%;}
+	.con{min-height:100%;_height:100%;}
+	.footer{width:100%;background:#efefef;margin-top:-60px;height:60px;}
+	.wrap{padding-bottom:60px;}
+	</style>
+</head>
+<body>
+<div class="con">
+<div class="wrap">
+	<p>123</p><p>123</p><p>123</p><p>123</p><p>123</p>
+	<p>123</p><p>123</p><p>123</p><p>123</p><p>123</p>
+	<p>123</p><p>123</p><p>123</p><p>123</p><p>123</p>
+	<p>123</p><p>123</p><p>123</p><p>123</p><p>123</p>
+	<p>123</p><p>123</p><p>123</p><p>123</p><p>123</p>
+	<p>123</p><p>123</p><p>123</p><p>123</p><p>123</p>
+	<p>123</p><p>123</p><p>123</p><p>123</p><p>123</p>
+</div>
+</div>
+<div class="footer"></div>
+</body>
+<script>
+document.onkeydown = function(event){
+	var e = event || window.event;
+	if(e.keyCode == 13){
+		//alert("submit");
+	}
+}
+
+//--------------
+function dog(name,color){
+	this.name = name;
+	this.color = color;
+	this.yelp=function(){
+		alert("wow");
+	};
+	this.crow = function(){
+		setInterval(this.yelp,1000)
+	}
+}
+
+var d = new dog("hei","black");
+//d.crow()
+//----------------------
+
+// var test = document.getElementById("test"),
+//  len = test.childNodes.length;
+//  console.log(len)
+
+ //-----------------------------
+//  function shout(){alert(123)}
+//  var Obj=function(msg){
+//     this.msg=msg;
+//     this.shout=function(){
+//         alert(this.msg);
+//     }
+//     this.waitAndShout=function(){          
+//     	setTimeout(this.shout, 2000);
+	    
+//  	}
+// }
+// var aa=new Obj("abc");
+// aa.waitAndShout();
+// aa.shout();
+
+//---------------------------------
+
+var str = "aksjdhfbalkbxcdjs";
+var obj = {};
+var key;
+for(var i=0;i<str.length;i++){
+	key = str[i];
+	if(!obj[key]){
+		obj[key] = 1;
+	}else{
+		obj[key]++;
+	}
+}
+console.log(obj)
+
+//-------test3---------------------------
+
+var ok = "heoksjhfheohsdkfhsheolkd";
+var s = ok.substr(ok.indexOf("heo"),3);
+var ss = ok.match(/heo/g)
+console.log("test3"+ss);
+
+//------test4-----------------------------
+var arr4 = [12,234,45,3,23];
+var result = Math.max.apply(null,arr4);
+console.log(result)
+
+//--------------------test5-------
+var endTime = new Date(2015,5,9,18,47,52);
+var curTime = new Date();
+var ret = endTime.getTime() - curTime.getTime();
+    ret = Math.round( ret/1000 )
+console.log("test5:"+ret)
+
+//-----------------------
+function fun(a,b,c){
+	var u = 2+3;
+
+}
+
+//----------test6----------------
+var a = {"x": 1};
+var b = a;
+a.x = 2;
+b.x; 
+console.log("fuzhi--:"+b.x)
+a = {"x":3};
+b.x;
+a.x = 4;
+b.x;
+console.log("fuzhi:"+b.x)
+</script>
+</html>

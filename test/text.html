@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>text</title>
+  <link rel="stylesheet" href="css/css1.css">
+  <style>
+  .ff{border:1px solid red;overflow:hidden;zoom:1}
+  .fla{float:left;width:400px;border:1px solid;height:300px;}
+  </style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+ //  $(function(){
+	// var _id = $(".id").text();
+	// console.log(_id);
+ //  })
+  </script>
+ </head>
+ <body>
+  <div class="id">123<p>456</p></div>
+  <table class="tab1">
+  	<thead>
+    	<tr>
+    		<th>1</th>
+    		<th>2</th>
+    		<th>3</th>
+    	</tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+  </table>
+  <input type="text" value="123123132" disabled="true">
+  <div class="ff"><div class="fla"></div></div>
+ </body>
+<script>
+var a = 'sdsfgdfdhrtj'.split('').sort().join('');
+ var k = 'sdsfgdfdhrtj'.split('').sort().join('').replace(/(.)\1+/g,'$1').length;
+ console.log(a)
+
+ var sui = Math.random()*10;
+ function qu(){
+  var n = [];
+  var k;
+  for(i=0;i<15;i++){
+    k = Math.round(Math.random()*5)+5;
+    n.push(k);
+  }
+  return n;
+ }
+ console.log("随机数"+qu());
+
+ //-------------
+ var name = 'aaa bbb ccc'; 
+ var uw=name.replace(/\b\w+\b/g, function(word){ return word.substring(0,1).toUpperCase()+word.substring(1);} );
+//alert(uw);
+
+// var a=(); 
+var a=[]; 
+var a={}; 
+//var a=//; 
+
+//--------------
+var tt = 'aa';  
+function test(){  
+  console.log("tan1"+tt);  //underfined; 
+  var tt = 'dd';  
+  console.log("tan2"+tt);  //dd 
+}  
+test();  
+
+
+  var a = "123";
+  function t(){
+    console.log(a);
+    var a = "2"
+  }
+  t()
+
+  //--------------------
+  //var en;
+  console.log(typeof en)
+
+  //----------------------
+  var data1 = [1,2,2,3,4,3,4,6,5,4];
+  console.group(data1)
+
+  //------------------------------
+
+  var a = new Array("apple", "banana", "cactus");
+  function g(){
+    this.name = "123";
+  }
+  var k = new g();
+  console.log(k.propertyIsEnumerable("0"));
+//-----------------------------
+
+var arr2 = [12,3,4,36,4,3,44,5,6]
+console.log(arr2.sort(function(a,b){return a-b}))
+</script>
+</html>
