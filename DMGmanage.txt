@@ -1,0 +1,59 @@
+http://localhost:8080/dmgjson/web/login.html             本机
+
+http://testgym.dmg365.com:88/dmgweb/login.html                测试库
+http://182.92.97.109:28081/dmgweb2.0/login.html
+hlg 
+111111
+
+http://gym.dmg365.com:89/dmgweb/login.html		      正式库
+
+mdwq
+908790
+
+jwf
+111111
+
+182.92.97.109
+liuyang
+dmg2015ll
+
+Bug系统  http://182.92.97.109:90/redmine/projects/changguan2/issues/calendar
+
+
+D:\svn\Research\gym\trunk\server\gymManage\WebContent
+
+https://182.92.97.109/svn/Research/gym/trunk/server/gymManage/WebContent/dmgweb2.0
+
+liuyang
+Liuyang~123456
+
+
+邮箱地址
+jun.zhen@dmg365.com       zhen908965
+mail.dmg365.com
+
+
+微盟账号：dmg365
+微盟密码：6668082
+微信账号：dmg365
+微信密码：goto2015
+
+SVN地址  https://182.92.97.109/svn/Research/dmg/trunk/document
+
+用户名:zhenguojun
+密码:zhengguojun_zgj
+
+
+ftp账号
+zhenguojun12345678
+182.92.97.109 
+21
+
+
+SVN地址  https://182.92.97.109/svn/Research/dmg/trunk/document
+u:zhenguojun
+p:zhengguojun
+
+运营平台svn：https://182.92.97.109/svn/Research/manage
+
+http://localhost:8080/DMGManage/
