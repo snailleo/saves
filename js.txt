@@ -1,0 +1,2 @@
+1.Math.max.apply(null,arr)
+  Array.prototype.push.apply(arr1,arr2)
