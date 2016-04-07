@@ -1,2 +1,5 @@
+Éú³Éjson£ºhttp://beta.json-generator.com/
+          http://www.pan1234.com/
+
 1.Math.max.apply(null,arr)
   Array.prototype.push.apply(arr1,arr2)

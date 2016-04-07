@@ -4,32 +4,15 @@
 电商	192.168.2.104	http://fmdemo.gaiay.net.cn:8088
 mantis	192.168.2.104	http://mantis.gaiay.net.cn/login_page.php
 
-首页  http://192.168.0.118:8081/app/index.do?token=b2fd8f14b5795d7ea-8000
-代金券  http://fmdemo.gaiay.net.cn/app/gift/gift.do
-消费码  http://192.168.0.236:8081//app/order/order!orderOtwoO.do?token=b2fd8f14a36fe3fbd-8000
-分享播放  http://192.168.0.183:8081/app/goods/share!detail.do?id=0dbc37148f89c307f-7ff9&stationId=1&programId=999
-
-http://192.168.0.238:8081/app/share!anchor_detail.do?stationId=1&id=1
-http://192.168.0.238:8081/app/share!program.do?stationId=1&id=1200
-http://192.168.0.238:8081/app/goods/share!detail.do?stationId=1&id=61e066149e5f84fea-8000&programId=1200
-http://192.168.0.238:8081/app/share!anchor_detail.do?stationId=1&id=1
-http://192.168.0.238:8081/app/share!program_detail.do?stationId=1&id=1
-
-首页：http://fmdemo.gaiay.net.cn:8088/app/share.do?stationId=1
-     http://fmdemo.gaiay.net.cn:8088/app/activitie/share!list.do?stationId=1
-栏目列表：http://fmdemo.gaiay.net.cn:8088/app/share!program_list.do?stationId=1 
-主播列表：http://fmdemo.gaiay.net.cn:8088/app/share!anchor_list.do?stationId=1
-
-http://fmdemo.gaiay.cn/app/index.do?token=c696ba14b6dbb6c96-7e95
-
-晒单 http://192.168.0.164:8081/app/interactive/interactive.do?token=b2fd8f14b5795d7ea-8000
+网盘资源下载 http://pan.java1234.com/
 
 安装chrome代码插件 https://chrome.google.com/webstore/detail/prism-pretty/hjjcdjnncffbbhlglkipjhljmocnehim
 
 C:\Program Files\Git\bin;C:\Program Files\Git\cmd
 
 git安装安装git http://yunpan.cn/cy7D2zicJRBpM 访问密码 750f
-需要配置你的Git到path，假如你的git安装目录是”C:\Program Files (x86)\Git”，在path中加入git的bin和cmd目录，如C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\cmd
+需要配置你的Git到path，假如你的git安装目录是”C:\Program Files (x86)\Git”，在path中加入git的bin和cmd目录，
+如C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\cmd
 
 邮箱：http://ym.163.com/
       liuyang@gaiay.cn   57907294   59527000
@@ -302,3 +285,21 @@ querySelectorAll()接受一个css选择器作为参数,然后返回DOM中匹配的元素的集合数组
 
 ie6 position:fixed  
 _position:absolute; _top:expression(documentElement.scrollTop + documentElement.clientHeight * 1/4 + "px");
+
+
+===========================================================
+模板方法
+
+String.prototype.temp = function(obj) {
+	return this.replace(/\$\w+\$/gi, function(matchs) {
+		var returns = obj[matchs.replace(/\$/g, "")];
+		return (returns + "") == "undefined"? "": returns;
+	});
+};
+
+String.prototype.temp = function(obj) {
+return this.replace(/\$(.+)\$?/g, obj[“$1″]);
+};
+
+SPA
+http://web.jobbole.com/81990/
