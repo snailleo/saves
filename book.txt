@@ -18,6 +18,9 @@ http://zhidao.social-touch.com/?/home/first_login-TRUE#all
 个性化运营修改地址
 http://dev.data.social-touch.com:30096/modify1.php?rand=87247
 http://dev.data.social-touch.com:30095/
+jr9g9hw5vz~8suk
+
+
 
 http://guahao.jkqd.gov.cn/#/index
 http://www.cnblogs.com/lewis617/p/5145073.html?utm_source=tuicool&utm_medium=referral
@@ -26,3 +29,24 @@ http://www.cnblogs.com/lewis617/p/5126334.html
 react-transform-boilerplate
 https://github.com/gaearon/react-transform-boilerplate
 https://zhuanlan.zhihu.com/p/20522487
+
+
+npm:
+npm install 安装package.json
+npm init 引导创建package.json
+npm remove 移除
+npm update 更新
+npm ls 列出所有安装包
+
+es6 proptype验证
+http://www.myexception.cn/web/2016594.html
+
+
+http://dev.data.social-touch.com:30106/
+账号 : sqyaodongzhi
+密码 : jr9g9hw5vz~8suk
+开发机地址：211.151.57.103
+端口 9922
+
+
+
