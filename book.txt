@@ -48,5 +48,6 @@ http://dev.data.social-touch.com:30106/
 开发机地址：211.151.57.103
 端口 9922
 
-
-
+width:icons-sprite-width(menu_down);
+      height:icons-sprite-height(menu_down);
+      @include icons-sprite(menu_down);
