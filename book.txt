@@ -51,3 +51,27 @@ http://dev.data.social-touch.com:30106/
 width:icons-sprite-width(menu_down);
       height:icons-sprite-height(menu_down);
       @include icons-sprite(menu_down);
+
+
+https://github.com/simongong/js-stackoverflow-highest-votes/blob/master/questions1-10/how-to-create-a-UUID-in-javascript.md
+移动端单页面 http://web.jobbole.com/81990/
+
+checkbox美化：http://www.html5tricks.com/demo/jiaoben1503/index.html
+
+Guide 校对认领：https://github.com/vuefe/vuejs.org/issues/77
+API 校对认领：https://github.com/vuefe/vuejs.org/issues/119
+翻译源码： https://github.com/vuefe/vuejs.org
+翻译基础指引： https://github.com/vuefe/vuejs.org/issues/25
+翻译进度以及翻译认领：https://github.com/vuefe/vuejs.org/issues
+各自修改下群名片，地方-技术栈-github账号，如 南京-Vue2-dingyiming
+有问题主动沟通，为了提高群质量，谢绝不参与翻译工作的伙伴，已加入的小伙伴请根据自身情况做好调整，后面会根据大家情况做相应调整，谢谢
+
+vue2：http://vuefe.cn/guide/render-function#基础
+vue-toute2.0: http://router.vuejs.org/zh-cn/essentials/getting-started.html
+vue-route2.0实例：http://blog.csdn.net/bboyjoe/article/details/52804988
+
+dva : https://github.com/dvajs/dva-docs/blob/master/v1/zh-cn/getting-started.md
+
+	https://github.com/dvajs/dva-docs/tree/master/v1/zh-cn/tutorial
+
+348538963
