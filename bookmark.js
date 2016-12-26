@@ -27,6 +27,8 @@ var FE = {
     'w3ctech': 'https://www.w3ctech.com/',
     'FE UED 数据管理平台' : 'http://fe.social-touch.com:30082/org/index.do',
     '时趣SCRM' : 'http://biz.social-touch.com/User/Index/index?ST_AID=2',//u:yanshi@social-touch.comm;p:yanshi
+    'svn' : 'svn://211.151.70.29/svn/ued',
+    'vueui' : 'http://ui.social-touch.com/quickstart',
 }
 
 
