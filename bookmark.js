@@ -12,7 +12,9 @@ var vue = {
 	'vue2': 'http://vuefe.cn/guide/render-function#基础',
 	'vue-toute2.0': 'http://router.vuejs.org/zh-cn/essentials/getting-started.html',
 	'vue-route2.0实例': 'http://blog.csdn.net/bboyjoe/article/details/52804988',
-    'vue-strap':'http://yuche.github.io/vue-strap/'
+    'vue-strap':'http://yuche.github.io/vue-strap/',
+
+    'allselect':'https://segmentfault.com/q/1010000004003248/a-1020000004006124';
 }
 
 var css = {
