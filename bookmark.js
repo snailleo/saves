@@ -8,6 +8,11 @@ var react = {
     'react教程' : 'http://react-china.org/t/react/8696';
 }
 
+var angular = {
+    '教程汇总' : 'http://www.jb51.net/special/555.htm',
+    'jiaocheng' : 'http://www.jb51.net/special/437.htm'
+}
+
 var vue = {
 	'vue2': 'http://vuefe.cn/guide/render-function#基础',
 	'vue-toute2.0': 'http://router.vuejs.org/zh-cn/essentials/getting-started.html',
@@ -32,6 +37,8 @@ var FE = {
     'svn' : 'svn://211.151.70.29/svn/ued',
     'vueui' : 'http://ui.social-touch.com/quickstart',
 }
+
+var 微信小程序 = 'https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=201715';
 
 
 //数组去重：
