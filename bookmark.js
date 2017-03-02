@@ -38,6 +38,10 @@ var FE = {
     'vueui' : 'http://ui.social-touch.com/quickstart',
 }
 
+SVN权限：
+用户名：liuyang
+密码：9181HyC121w9bGyy
+
 var 微信小程序 = 'https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=201715';
 
 
