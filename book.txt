@@ -80,3 +80,7 @@ dva : https://github.com/dvajs/dva-docs/blob/master/v1/zh-cn/getting-started.md
 姓名：刘洋
 服务器用户名：sqliuyang
 服务器密码：$E67mcsp0vn^
+
+ SVN权限：
+        用户名：liuyang
+        密码：9181HyC121w9bGyy
