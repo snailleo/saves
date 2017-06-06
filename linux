@@ -1,0 +1,31 @@
+pwd	查看目录
+
+mkdir -p
+ls -a
+ls -l
+ls -lh
+
+rmdir 删除空目录
+rm -rf  删除目录
+
+mv 修改文件名
+
+cp 复制
+	-r 复制目录
+	-p 连带文件属性复制
+	-d 若源文件是链接文件，则复制链接属性
+	-a 相当于 -pdr
+
+locate 查找（数据库中查找，一天更新） updatedb
+find 查找
+	-mtime 时间
+	-size  大小
+	-inum  i节点
+	（-a and   -o or 多个条件）
+grep  搜索字符串
+	-i  忽略大小写
+	-v  排除指定字符串
+
+-exec    {} \    第二条命令执行
+
+ls -l -R /home   列出/home文件夹下的所有文件和目录的详细资料,

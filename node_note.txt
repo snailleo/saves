@@ -46,3 +46,9 @@
   grunt serve --allow-remote 
   bower install
 
+
+
+1.http
+  querystring.stringify({name:'zhang',age:12})
+  querystring.parse('name=zhang,age=12', ',')
+  querystring.parse('name:zhang,age:12', ',', ':')
