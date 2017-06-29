@@ -88,3 +88,4 @@ dva : https://github.com/dvajs/dva-docs/blob/master/v1/zh-cn/getting-started.md
 scared to be lonely
 touch
 ciao adios
+solo dance
